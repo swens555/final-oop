@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <main>
+
+      <div class="left">
+    <div class="formWrapper" id="animalForm">
+      <h3>Add animal</h3>
+      <select name="animalSelect" id="">
+        <option value disabled selected hidden="">Select animal</option>
+        <option value="Zebra">Zebra</option>
+        <option value="Tiger">Tiger</option>
+        <option value="Elephant">Elephant</option>
+      </select>
+      <input placeholder="name"  id="animalInput1">
+      <input placeholder="age"  id="animalInput2">
+      <input type="text"  id="animalInput3">
+      <input type="text"  id="animalInput4">
+      <button id="animalSubmitButton">Submit</button>
+    </div>
+    <div class="formWrapper" id="employeeForm">
+      <h3>Add zookeeper</h3>
+      <input placeholder="name"  id="zookeeperInput1">
+      <button id="zookeeperSubmitButton">Submit</button>
+    </div>
+  </div>
+  <div class="right">
+    <h2>
+      <span id="animalCards" class="cardToggle">Animals</span>
+    </h2>
+    <div id="cardWrapper"></div>
+  </div>
+  </main>
+  <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
